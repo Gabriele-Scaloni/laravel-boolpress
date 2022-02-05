@@ -1,20 +1,47 @@
 @extends('layouts.main-layout')
 @section('content')
-    <h3>ciao</h3>
-
-    <form> 
-        <label for="name">name</label><br>
-        <input type="text" name="name"><br>
-
-        <label for="email">email</label><br>
-        <input type="email"  name="email"><br>
-
-        <label for="password">password</label><br>
-        <input type="password"  name="password" ><br>
-
-        <label for="password_confirmation">password confirmation</label><br>
-        <input type="password" name="password_confirmation"><br>
+    @guest {{-- la parte dentro guest compare quando non sono loggato.--}}
         
-        <input type="submit" value="Registrati">
-    </form>
+
+        <h3>Registrazione</h3>
+
+        <form> 
+
+            <label for="name">name</label><br>
+            <input type="text" name="name"><br>
+
+            <label for="email">email</label><br>
+            <input type="email"  name="email"><br>
+
+            <label for="password">password</label><br>
+            <input type="password"  name="password" ><br>
+
+            <label for="password_confirmation">password confirmation</label><br>
+            <input type="password" name="password_confirmation"><br>
+            
+            <input type="submit" value="Register">
+
+        </form>
+
+        <hr>
+
+        <h3>Login</h3>
+        <form action="{{route('login')}}" method="POST">
+
+            @method('POST')
+            @csrf
+
+            <label for="email">email</label><br>
+            <input type="email"  name="email"><br>
+
+            <label for="password">password</label><br>
+            <input type="password"  name="password" ><br>
+
+            <input type="submit" value="Login">
+
+        </form>
+
+        @else 
+        <newguest-component></newguest-component>
+    @endguest
 @endsection
