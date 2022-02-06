@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Employee;
 
 class UtenteController extends Controller
 {
@@ -11,6 +12,8 @@ class UtenteController extends Controller
     }
     public function apiGetUtente() {
 
-        return json_encode('ciao');
+        $newguest = Employee::all();
+
+        return json_encode($newguest);
     }
 }

@@ -3,10 +3,15 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Guests</div>
+                    <div class="card-header"> ci sono {{ employee.lenght }} Guests</div>
 
                     <div class="card-body">
-                        I'm an example component.
+                        <h3>List: </h3>
+                        <ul>
+                            <li v-for="employee, i in employees" :key="i">
+                                {{employee.id}} {{employee.first_name}}   {{employee.last_name}} 
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -16,13 +21,24 @@
 
 <script>
     export default {
+
+        data() {
+            return {
+                employee = []
+            };
+        },
         mounted() {
+
             axios.get('/newguest/list')
-                .then(res => {
-                    console.log(res);
-                }).catch(err => {
-                    console.error(err)
-                });
+            .then(res => {
+
+                const data = res.data;
+
+                this.employee = data.lenght;
+
+            }).catch(err => {
+                console.error(err)
+            });
         }
     }
 </script>

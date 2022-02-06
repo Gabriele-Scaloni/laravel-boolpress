@@ -1,6 +1,6 @@
 @extends('layouts.main-layout')
 @section('content')
-    @guest {{-- la parte dentro guest compare quando non sono loggato.--}}
+    @guest {{-- la parte dentro guest compare solo quando non sono loggato.--}}
         
 
         <h3>Registrazione</h3>
@@ -44,6 +44,8 @@
         </form>
 
         @else 
+
         <newguest-component></newguest-component>
+        
     @endguest
 @endsection

@@ -1937,35 +1937,9 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/NewguestComponent.vue?vue&type=script&lang=js& ***!
   \****************************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    axios.get('/newguest/list').then(function (res) {
-      console.log(res);
-    })["catch"](function (err) {
-      console.error(err);
-    });
-  }
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Gabri\\esercizi-boolean\\MyLaravel13\\resources\\js\\components\\NewguestComponent.vue: Invalid shorthand property initializer. (27:21)\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     data() {\u001b[0m\n\u001b[0m \u001b[90m 26 |\u001b[39m         \u001b[36mreturn\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m             employee \u001b[33m=\u001b[39m []\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m         }\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m     }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m     mounted() {\u001b[0m\n    at Parser._raise (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:476:17)\n    at Parser.raiseWithData (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:469:17)\n    at Parser.raise (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:430:17)\n    at Parser.checkExpressionErrors (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:3900:12)\n    at Parser.parseMaybeAssign (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:11868:12)\n    at Parser.parseExpressionBase (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:11769:23)\n    at C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:11763:39\n    at Parser.allowInAnd (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:13817:16)\n    at Parser.parseExpression (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:11763:17)\n    at Parser.parseReturnStatement (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:14518:28)\n    at Parser.parseStatementContent (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:14167:21)\n    at Parser.parseStatement (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:14113:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:14739:25)\n    at Parser.parseBlockBody (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:14730:10)\n    at Parser.parseBlock (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:14714:10)\n    at Parser.parseFunctionBody (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:13440:24)\n    at Parser.parseFunctionBodyAndFinish (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:13424:10)\n    at Parser.parseMethod (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:13374:10)\n    at Parser.parseObjectMethod (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:13250:19)\n    at Parser.parseObjPropValue (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:13291:23)\n    at Parser.parsePropertyDefinition (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:13208:10)\n    at Parser.parseObjectLike (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:13099:21)\n    at Parser.parseExprAtom (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:12498:23)\n    at Parser.parseExprSubscripts (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:12149:23)\n    at Parser.parseUpdate (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:12129:21)\n    at Parser.parseMaybeUnary (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:12104:23)\n    at Parser.parseMaybeUnaryOrPrivate (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:11901:61)\n    at Parser.parseExprOps (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:11908:23)\n    at Parser.parseMaybeConditional (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:11878:23)\n    at Parser.parseMaybeAssign (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:11833:21)\n    at C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:11791:39\n    at Parser.allowInAnd (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:13817:16)\n    at Parser.parseMaybeAssignAllowIn (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:11791:17)\n    at Parser.parseExportDefaultExpression (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:15465:22)\n    at Parser.parseExport (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:15353:31)\n    at Parser.parseStatementContent (C:\\Gabri\\esercizi-boolean\\MyLaravel13\\node_modules\\@babel\\parser\\lib\\index.js:14229:27)");
 
 /***/ }),
 
@@ -37602,30 +37576,41 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [_vm._v("Guests")]),
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-8" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [
+            _vm._v(" ci sono " + _vm._s(_vm.employee.lenght) + " Guests"),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("h3", [_vm._v("List: ")]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              ),
-            ]),
+            _c(
+              "ul",
+              _vm._l(_vm.employees, function (employee, i) {
+                return _c("li", { key: i }, [
+                  _vm._v(
+                    "\n                            " +
+                      _vm._s(employee.id) +
+                      " " +
+                      _vm._s(employee.first_name) +
+                      "   " +
+                      _vm._s(employee.last_name) +
+                      " \n                        "
+                  ),
+                ])
+              }),
+              0
+            ),
           ]),
         ]),
       ]),
-    ])
-  },
-]
+    ]),
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
