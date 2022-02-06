@@ -17,7 +17,12 @@
 <script>
     export default {
         mounted() {
-            axios.get('/newguest/list');
+            axios.get('/newguest/list')
+                .then(res => {
+                    console.log(res);
+                }).catch(err => {
+                    console.error(err)
+                });
         }
     }
 </script>

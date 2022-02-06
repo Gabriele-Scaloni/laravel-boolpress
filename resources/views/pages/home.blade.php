@@ -5,7 +5,9 @@
 
         <h3>Registrazione</h3>
 
-        <form> 
+        <form action="{{route('register')}}" method="POST"> 
+            @method('POST')
+            @csrf
 
             <label for="name">name</label><br>
             <input type="text" name="name"><br>
