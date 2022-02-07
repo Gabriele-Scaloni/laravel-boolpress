@@ -13,10 +13,10 @@
             <input type="text" name="name"><br>
 
             <label for="email">email</label><br>
-            <input type="email"  name="email"><br>
+            <input type="email" name="email"><br>
 
             <label for="password">password</label><br>
-            <input type="password"  name="password" ><br>
+            <input type="password" name="password" ><br>
 
             <label for="password_confirmation">password confirmation</label><br>
             <input type="password" name="password_confirmation"><br>
@@ -45,7 +45,6 @@
 
         @else 
 
-        <newguest-component></newguest-component>
         
     @endguest
 @endsection
