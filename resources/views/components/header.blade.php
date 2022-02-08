@@ -1,62 +1,27 @@
-<h2>
-    
-    <h3> 
-        @guest {{-- la parte dentro guest compare solo quando non sono loggato.--}}
-        
+<header>
 
-        <h3>Registrazione</h3>
+    @guest
 
-        <form action="{{route('register')}}" method="POST"> 
+        <form action="{{route('register')}}" method="POST">
             @method('POST')
             @csrf
 
-            <label for="name">name</label><br>
+            <label for="name">Name</label><br>
             <input type="text" name="name"><br>
+            <label for="email">Email</label><br>
+            <input type="text" name="email"><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password"><br>
+            <label for="password_confirmation">Password Confirmation</label><br>
+            <input type="password" name="password_confirmation"><br><br>
 
-            <label for="email">email</label><br>
-            <input type="email" name="email"><br>
-
-            <label for="password">password</label><br>
-            <input type="password" name="password" ><br>
-
-            <label for="password_confirmation">password confirmation</label><br>
-            <input type="password" name="password_confirmation"><br>
-            
-            <input type="submit" value="Register">
-
+            <input type="submit" name="register">
         </form>
-
-        <hr>
-
-        <h3>Login</h3>
-        <form action="{{route('login')}}" method="POST">
-
-            @method('POST')
-            @csrf
-
-            <label for="email">email</label><br>
-            <input type="email"  name="email"><br>
-
-            <label for="password">password</label><br>
-            <input type="password"  name="password" ><br>
-
-            <input type="submit" value="Login">
-
-        </form>
-
-        @else 
-
-        
+    
+    @else   
+        <h3>welcome {{Auth::user()->name}}</h3>
     @endguest
-        @auth 
-        
-        {{Auth::user() -> name}} <br>
-        <a class="btn btn-primary" href="{{route('logout')}}">Logout</a>
-        
-        @endauth
+
+</header>
 
 
-    </h3>
-
-
-</h2>

@@ -11,11 +11,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        [
+    
+        $this->call([
 
-        $this->call(EmployeeSeeder::class),
-        $this->call(PostSeeder::class),
+            CategorySeeder::class,//prima la categoria che non ha chiavi esterne 
+            PostSeeder::class
 
-        ];
+        ]);
+
     }
 }

@@ -1,16 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>posts</title>
-</head>
-<body>
+@extends('layouts.main-layout')
+@section('content')
+    
     <h1>posts</h1>
-
-    @foreach ($posts as $post)
-        <h2>{{$post -> titolo}} - {{ $post->category->name }}</h2>
-    @endforeach
-</body>
-</html>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Text</th>
+            <th>Likes</th>
+            <th>Data</th>
+        </tr>
+        @foreach ($posts as $post)
+            <tr>
+                <td>{{ $post -> title }}</td>
+                <td>{{ $post -> text }}</td>
+                <td>{{ $post -> likes }}</td>
+                <td>{{ $post -> created_at }}</td>
+            </tr>
+        @endforeach
+    </table>
+   
+@endsection

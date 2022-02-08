@@ -9,6 +9,7 @@ $factory->define(Post::class, function (Faker $faker) {
     return [
         'title' => $faker -> words(2, true),
         'text' => $faker -> text(),
-        'name_author' => $faker -> name(),
+        'likes' => $faker -> numberBetween(0, 100),
+
     ];
 });

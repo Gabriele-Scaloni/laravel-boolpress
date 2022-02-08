@@ -19,27 +19,14 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home'); */
+Route::get('/home', 'HomeController@index')->name('home'); */ 
 
-Route::post('/register', 'Auth\RegisterController@register')->name('register');
-Route::post('/login', 'Auth\LoginController@login')->name('login');
-Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('/posts', 'GuestController@home') ->name('posts');
 
-Route::get('/', 'GuestController@home')->name('home');
+Route::post('/login', 'Auth\LoginController@login') ->name('login');
+Route::post('/register', 'Auth\RegisterController@register') ->name('register');
+Route::get('/logout', 'Auth\LogoutController@login') ->name('logout');
 
-Route::get('/posts', 'PostController@posts')->name('posts');
 
-Route::middleware('auth')->group(function() {
-    Route::get('posts/create', 'PostController@create')->name('create');
-    Route::post('posts/store', 'PostController@store')->name('store');
-});
 
-/*
-??
-GET /posts => show dei post (pubblica) ok
-GET /posts/create => view crea un post (autenticati) ok
-POST /posts/store => crea il post sul db (autenticati) ok
-GET /posts/id => dettaglio del post (pubblica)
-GET /posts/id/edit => modifica del post (autenticati)
-...
-*/
+
