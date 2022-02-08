@@ -22,10 +22,12 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home'); */ 
 
 Route::get('/posts', 'GuestController@home') ->name('posts');
+Route::get('/post/create', 'HomeController@createPost') ->name('post.create');
+Route::post('/post/store', 'Homecontroller@storePost') -> name('post.store');
 
 Route::post('/login', 'Auth\LoginController@login') ->name('login');
 Route::post('/register', 'Auth\RegisterController@register') ->name('register');
-Route::get('/logout', 'Auth\LogoutController@login') ->name('logout');
+Route::get('/logout', 'Auth\LoginController@logout') ->name('logout');
 
 
 
