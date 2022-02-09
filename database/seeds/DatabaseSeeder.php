@@ -15,8 +15,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
 
             CategorySeeder::class,//prima la categoria che non ha chiavi esterne 
-            PostSeeder::class
-
+            PostSeeder::class,
+            TagSeeder::class,
         ]);
 
     }

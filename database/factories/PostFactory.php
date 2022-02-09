@@ -7,6 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Post::class, function (Faker $faker) {
     return [
+        
         'title' => $faker -> words(2, true),
         'text' => $faker -> text(),
         'likes' => $faker -> numberBetween(0, 100),

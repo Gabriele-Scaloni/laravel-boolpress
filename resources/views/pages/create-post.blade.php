@@ -10,8 +10,14 @@
         <label for="text">Text</label><br>
         <input type="text" name="text"><br>
 
+        <label for="category">category</label><br>
+        <select name="category">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+        </select>
+
         <input type="submit" value="create">
     </form>
-    <a class="btn btn-secondary" href="{{route('logout') }}">logout</a>
 
 @endsection

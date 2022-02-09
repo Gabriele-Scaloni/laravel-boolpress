@@ -8,6 +8,7 @@
             <th>Title</th>
             <th>Text</th>
             <th>Likes</th>
+            <th>Tags</th>
             <th>Data</th>
         </tr>
         @foreach ($posts as $post)
@@ -16,6 +17,11 @@
                 <td>{{ $post -> text }}</td>
                 <td>{{ $post -> likes }}</td>
                 <td>{{ $post -> created_at }}</td>
+                <td>
+                    @foreach ($post as tags as $tag)
+                        {{$tag -> name}} <br>
+                    @endforeach
+                </td>
             </tr>
         @endforeach
     </table>
